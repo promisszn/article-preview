@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --darkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturateddarkblue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    --manrope: 'Manrope', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--lightGrayishBlue);
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--manrope);
+}
+
+.article{
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 101px;
+    margin-bottom: 101px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.img img{
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.content{
+    padding: 30px;
+}
+
+.content h3{
+    color: var(--darkGrayishBlue);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.content p{
+    color: var(--desaturateddarkblue);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.share{
+    padding: 0 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.info{
+    position: relative;
+    right: 25px;
+    font-size: 13px; 
+}
+
+.info h4{
+    color: var(--darkGrayishBlue);
+}
+
+.info p{
+    color: var(--desaturateddarkblue);
+}
+
+.share-icon{
+    background-color: var(--lightGrayishBlue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.active-share{
+    background-color: var(--darkGrayishBlue);
+    color: white;
+    display: flex;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.active-share p{
+    text-transform: uppercase;
+    color: var(--grayishBlue);
+    letter-spacing: 4px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.social{
+    margin-left: -35px;
+}
+
+.social img{
+    padding-right: 10px;  
+}
+
+.share-icon2{
+    background-color: var(--desaturateddarkblue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
