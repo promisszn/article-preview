@@ -8,27 +8,30 @@
     --manrope: 'Manrope', sans-serif;
 }
 
-html{
+html {
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-body{
+body {
     background-color: var(--lightGrayishBlue);
     height: 100vh;
     width: 100vw;
     font-family: var(--manrope);
+    position: relative;
 }
 
-.article{
+.article {
     width: 320px;
     margin: 0 auto;
     margin-top: 101px;
@@ -37,30 +40,30 @@ body{
     border-radius: 10px;
 }
 
-.img img{
+.img img {
     width: 320px;
     height: 180px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
-.content{
+.content {
     padding: 30px;
 }
 
-.content h3{
+.content h3 {
     color: var(--darkGrayishBlue);
     line-height: 1.5;
     font-size: 16px;
 }
 
-.content p{
+.content p {
     color: var(--desaturateddarkblue);
     font-size: 13px;
     margin-top: 20px;
 }
 
-.share{
+.share {
     padding: 0 30px;
     padding-bottom: 20px;
     display: flex;
@@ -68,27 +71,27 @@ body{
     justify-content: space-between;
 }
 
-.avatar{
+.avatar {
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-.info{
+.info {
     position: relative;
     right: 25px;
-    font-size: 13px; 
+    font-size: 13px;
 }
 
-.info h4{
+.info h4 {
     color: var(--darkGrayishBlue);
 }
 
-.info p{
+.info p {
     color: var(--desaturateddarkblue);
 }
 
-.share-icon{
+.share-icon {
     background-color: var(--lightGrayishBlue);
     width: 30px;
     height: 30px;
@@ -99,11 +102,11 @@ body{
     cursor: pointer;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.active-share{
+.active-share {
     background-color: var(--darkGrayishBlue);
     color: white;
     display: flex;
@@ -113,7 +116,7 @@ body{
     justify-content: space-around;
 }
 
-.active-share p{
+.active-share p {
     text-transform: uppercase;
     color: var(--grayishBlue);
     letter-spacing: 4px;
@@ -121,15 +124,15 @@ body{
     padding-left: 10px;
 }
 
-.social{
+.social {
     margin-left: -35px;
 }
 
-.social img{
-    padding-right: 10px;  
+.social img {
+    padding-right: 10px;
 }
 
-.share-icon2{
+.share-icon2 {
     background-color: var(--desaturateddarkblue);
     width: 30px;
     height: 30px;
@@ -138,4 +141,41 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .article {
+        width: 700px;
+        height: 280px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img img {
+        height: 280px;
+        width: 280px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        justify-content: space-between;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .info {
+        right: 70px;
+    }
+
+    .active-share {
+        border-radius: 0 0 10px 0;
+    }
 }
